@@ -27,6 +27,9 @@ function makeDeck() {
      deck.push(card)
         }
     }
-    
+    function shuffle () 
+    {
+      
+    }
   
   }
