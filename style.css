@@ -1,0 +1,12 @@
+h1 { 
+font-size: 36px;
+font: 
+font-family: sans-serif; }
+
+html { 
+    background: url(https://i.imgur.com/OgG1zih.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
