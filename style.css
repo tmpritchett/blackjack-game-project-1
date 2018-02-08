@@ -1,5 +1,5 @@
 h1 { 
-    font-size: 150px;
+    font-size: 145px;
     font: Quartzo;
     font-family: sans-serif; 
     display: flex;
@@ -24,6 +24,8 @@ h1 {
     color: white;
     font-size: 16px;
     border-radius: 50%;
+    border-color: #000;
+    margin: 20px;
 
 
     }
@@ -85,7 +87,7 @@ h1 {
     }
     
     .down {
-        background: #B20000 url('https://imgur.com/a/IelZL') center center no-repeat !important;
+        background: #B20000 url('<a href="http://tinypic.com?ref=2qid5kw" target="_blank"><img src="http://i64.tinypic.com/2qid5kw.jpg" border="0" alt="Image and video hosting by TinyPic"></a>s://imgur.com/a/IelZL');
     }
     
     span.pos-0 {

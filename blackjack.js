@@ -623,7 +623,7 @@
 						});
 	
 						setTimeout(function() {
-							$('#dcard-0') alert('show');
+							$('#dcard-0').popover ('show');
 							$('#dcard-0').toast.fadeIn();
 						}, 100);
 					}
