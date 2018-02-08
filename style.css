@@ -7,14 +7,7 @@ h1 {
     align-content: center;
     }
 
-    h2 {
-        font-size: 125px;
-        font: Quartzo;
-        font-family: sans-serif;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
+    
 
  body {
         background-image: url(https://i.imgur.com/OgG1zih.jpg);
