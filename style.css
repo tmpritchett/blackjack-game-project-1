@@ -1,16 +1,62 @@
 h1 { 
-font-size: 150px;
-font: Quartzo;
-font-family: sans-serif; 
-display: flex;
-justify-content: center;
-align-content: center;
+    font-size: 150px;
+    font: Quartzo;
+    font-family: sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+
+    body {
+        background-image: url(https://i.imgur.com/OgG1zih.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+    }	
+    
+
+
+
+
+.card
+{
+	border: solid 1px #aaa;
+	border-radius: 9px;
+	width: 95px;
+	height: 150px;
+	float:left;
+	background-color: white;
+	padding: 3px 3px 3px 3px;
+}
+
+.card .value{
+	font-size:15pt;
+	font-family: sans-serif;
+}
+
+.card .suit
+{
+	background-image: url('suits.png');
+	height: 100px;
+	width: 90px;
+}
+
+.card .diamonds
+{
+	background-position-y: 100px;
+}
+
+.card .hearts
+{
+	background-position-x: 90px;
+}
+
+.card .clubs
+{
+	background-position-x:90px;
+    background-position-y:100px;
+    
 }
 
 
-body {
-    background-image: url(https://i.imgur.com/OgG1zih.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    
-}	

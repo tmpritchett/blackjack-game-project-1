@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!-- <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,32 +7,122 @@
      <link rel="stylesheet" href="style.css">
     <title>Document</title>
 
-</head>
+</head> -->
 
 <body>
         <div class="game">
                 <h1>Blackjack</h1>
                       
-        <input type="button1" class="btn" value="Deal" onclick="Deal()" />
-        <input type="button2" class="btn" value="Hit Me" onclick="HitMe()" />
-        <input type="button3" class="btn" value="Stay" onclick="Stay()" />
-        <input type="button4" class="btn" value="Play Again" onclick="PlayAgain()" />
+        <input type="button" class="btn" value="Deal" onclick="Deal()" />
+        <input type="button" class="btn" value="Hit Me" onclick="HitMe()" />
+        <input type="button" class="btn" value="Stay" onclick="Stay()" />
+        <input type="button" class="btn" value="Play Again" onclick="PlayAgain()" />
                 
         <div id="players" class="players"></div>
         <div id="deck" class="deck">
-        <div class="card" id="deckcount">52</div>
+        <div class="card" id="deckcount"></div>
         <div class="status" id="status"></div>
             </div>
                 
         <div class="clear"></div>
             </div>
         </body>
-        </html>
+        </html> -->
 
 <!-- <a href="https://imgur.com/OgG1zih"><img src="https://i.imgur.com/OgG1zih.jpg" title="source: imgur.com" /></a>   -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
 <script src="blackjack.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
 </body>
+</html> 
 
 
+<!-- <html>
+<head>
+<style>
+
+</style> -->
+<!-- 
+<script type="text/javascript">
+var cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+var suits = ["diamonds", "hearts", "spades", "clubs"];
+var deck = new Array();
+
+function getDeck()
+{
+	var deck = new Array();
+
+	for(var i = 0; i < suits.length; i++)
+	{
+		for(var x = 0; x < cards.length; x++)
+		{
+			var card = {Value: cards[x], Suit: suits[i]};
+			deck.push(card);
+		}
+	}
+
+	return deck;
+}
+
+function deal()
+{
+	// remove top card from deck
+	var card = deck[deck.length-1];
+	deck.splice(deck.length-1, 1);
+	return card;
+}
+
+function shuffle()
+{
+	// for 1000 turns
+	// switch the values of two random cards
+	for (var i = 0; i < 1000; i++)
+	{
+		var location1 = Math.floor((Math.random() * deck.length));
+		var location2 = Math.floor((Math.random() * deck.length));
+		var tmp = deck[location1];
+
+		deck[location1] = deck[location2];
+		deck[location2] = tmp;
+	}
+}
+
+function renderDeck()
+{
+	for(var i = 0; i < deck.length; i++)
+	{
+		var card = document.createElement("div");
+		var value = document.createElement("div");
+		var suit = document.createElement("div");
+		card.className = "card";
+		value.className = "value";
+		suit.className = "suit " + deck[i].Suit;
+
+		value.innerHTML = deck[i].Value;
+		card.appendChild(value);
+		card.appendChild(suit);
+
+		document.getElementById("deck").appendChild(card);
+	}
+}
+
+function load()
+{
+	deck = getDeck();
+	shuffle();
+	renderDeck();
+}
+
+window.onload = load;
+</script>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>A Deck of Cards</h1>
+<div id="deck"></div>
+
+</body>
+</html> -->
