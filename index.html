@@ -2,66 +2,73 @@
 <html>
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <div class="game">
-            <h1>Blackjack</h1>
-            
-                    <div id="wrapper">
-                    <div id="game">
-                      <div id="alert" class="alert alert-error hide"><span></span></div>
-                      <div id="dealer">
-                        <div id="dhand"></div>
-                      </div>
-                      <div id="player">
-                        <div id="phand"></div>
-                      </div>
-                      <div id="money">
-                        <span id="cash">Cash: $<span></span></span>
-                        <div id="bank">Winnings: $<span></span></div>
-                      </div>
-                    </div>
-                    <div id="actions">
-                      <button id="deal" class="btn">Deal</button>
-                      <button id="hit" class="btn">Hit</button>
-                      <button id="stand" class="btn">Stand</button>
-                      <button id="Play Again" class="btn">Play Again</button>
-                      
-                      <strong>Wager:</strong> $<input id="wager" class="input-small" type="text" />
-                    </div>
-                  </div>
-                  <div id="myModal" class="modal hide fade">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h3>Out of cash!</h3>
-                    </div>
-                    <!-- <div class="modal-body">
-                      <p> It seems you've run out of cash. Would you like to go to the nearest ATM and come back to play?</p>
-                    </div>
-                    <!-- <div class="modal-footer">
-                      <a href="#" id="cancel" class="btn">Nah</a>
-                      <a href="#" id="newGame" class="btn btn-primary">Yes!</a>
-                    </div> -->
-                  <!-- </div> -->
-        
-             <!-- <div id="deck" class="deck">
-                <div class="card" id="deckcount">52</div>
-                <div class="status" id="status"></div>
-            </div>
-        
-            <div class="clear"></div>
-        </div> --> 
-    
-</head> 
+</head>
 
 <body>
-        <script src="blackjack.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <div class="game">
+        <h1>Blackjack</h1>
+
+        <div id="wrapper">
+            <div id="game">
+                <div id="alert" class="alert alert-error hide">
+                    <span></span>
+                </div>
+                <div id="dealer">
+                    <div id="dhand"></div>
+                </div>
+                <div id="player">
+                    <div id="phand"></div>
+                </div>
+                <div id="money">
+                    <span id="cash">Cash: $
+                        <span></span>
+                    </span>
+                    <div id="bank">Winnings: $
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div id="actions">
+                <button id="deal" class="btn">Deal</button>
+                <button id="hit" class="btn">Hit</button>
+                <button id="stand" class="btn">Stand</button>
+                <button id="Play Again" class="btn">Play Again</button>
+
+                <strong>Wager:</strong> $
+                <input id="wager" class="input-small" type="text" />
+            </div>
+        </div>
+        <div id="myModal" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Out of cash!</h3>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal-body">
+                          <p> It seems you've run out of cash. Would you like to go to the nearest ATM and come back to play?</p>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <a href="#" id="cancel" class="btn">Nah</a>
+                          <a href="#" id="newGame" class="btn btn-primary">Yes!</a>
+                        </div> -->
+    <!-- </div> -->
+
+    <!-- <div id="deck" class="deck">
+                    <div class="card" id="deckcount">52</div>
+                    <div class="status" id="status"></div>
+                </div>
+            
+                <div class="clear"></div>
+            </div> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="blackjack.js"></script>
+
 </body>
+
 </html>
-
-

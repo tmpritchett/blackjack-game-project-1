@@ -100,22 +100,14 @@
 // }
 
 (function () {
-
-	/*****************************************************************/
-	/*************************** Globals *****************************/
-	/*****************************************************************/
+	var game  = new Game(),
+	player    = new Player(),
+	dealer    = new Player(),
+	running   = false,
+	blackjack = false,
+	insured   = 0, deal;
 	
-		var game      = new Game(),
-				player    = new Player(),
-				dealer    = new Player(),
-				running   = false,
-				blackjack = false,
-				insured   = 0,
-				deal;
 	
-	/*****************************************************************/
-	/*************************** Classes *****************************/
-	/*****************************************************************/
 	
 		function Player() {
 			var hand  = [],
@@ -304,7 +296,7 @@
 				deal.getCard(sender);
 	
 				if(i < 3) {
-					renderCard(ele, sender, 'up');
+					newFunction(ele, sender);
 					$(score).html(sender.getScore());
 				} else {
 					renderCard(ele, sender, 'down');
@@ -338,6 +330,10 @@
 	
 				clearTimeout(showCards());
 			};
+
+			function newFunction(ele, sender) {
+				renderCard(ele, sender, 'up');
+			}
 		}
 	
 		function Game() {
@@ -606,17 +602,17 @@
 					$(ele + ' div.card-' + i).attr('id', 'pcard-' + i);
 	
 					if(hand.length < 2) {
-						$('#pcard-0').popover({
-							animation: false,
-							container: '#pcard-0',
-							content: player.getScore(),
-							placement: 'left',
-							title: 'You Have',
-							trigger: 'manual'
-						});
+						// $('#pcard-0').popover({
+						// 	animation: false,
+						// 	container: '#pcard-0',
+						// 	content: player.getScore(),
+						// 	placement: 'left',
+						// 	title: 'You Have',
+						// 	trigger: 'manual'
+						// });
 	
 						setTimeout(function() {
-							$('#pcard-0').popover('show');
+							// $('#pcard-0').popover('show');
 							$('#pcard-0 .popover').css('display', 'none').fadeIn();
 						}, 500);
 					}
@@ -624,7 +620,7 @@
 					$(ele + ' div.card-' + i).attr('id', 'dcard-' + i);
 	
 					if(hand.length < 2) {
-						$('#dcard-0').popover({
+						$('#dcard-0').toast({
 							container: '#dcard-0',
 							content: dealer.getScore(),
 							placement: 'left',
@@ -633,8 +629,8 @@
 						});
 	
 						setTimeout(function() {
-							$('#dcard-0').popover('show');
-							$('#dcard-0 .popover').fadeIn();
+							$('#dcard-0').toast('show');
+							$('#dcard-0').toast.fadeIn();
 						}, 100);
 					}
 				}
