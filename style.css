@@ -29,10 +29,6 @@ h1 {
         width: 1000px;
     }
     
-    h3 {
-        margin: 5px 0;
-        text-align: center;
-    }
     
     #game {
     
@@ -82,7 +78,7 @@ h1 {
     }
     
     .down {
-        background: #B20000 url('https://www.clowerweb.com/cors/blackjack/card.png') center center no-repeat !important;
+        background: #B20000 url('https://imgur.com/a/IelZL') center center no-repeat !important;
     }
     
     span.pos-0 {
